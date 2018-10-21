@@ -36,11 +36,13 @@ Visit load balancer DNS @ [http://ecs-load-balancer-1166260154.us-west-2.elb.ama
 ### step 3
 
 ![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/blob/master/screenshots/node-server1.PNG "step3.1")
+
 ![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/blob/master/screenshots/node-server2.PNG "step3.2")
 
 ### step 4
 
 ![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/blob/master/screenshots/ecs-load-balancer.PNG "step4.1")
+
 ![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/blob/master/screenshots/ecs-target-group-2-targets.PNG "step4.2")
 
 ### step 5
