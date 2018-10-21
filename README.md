@@ -11,12 +11,16 @@ Web server 2 IP:    33333 requests processed
 
 ## Steps I did
 
-1. AWS: Sign in to Console
-2. ECS: Set up cluster of two instances
-3. Node.js: Run Node http server on instances (customer port 3000)
-4. ELB: Create Application Load Balancer and Target Group
-5. Verifiy: Visit Load Balancer's DNS Name and see if it routes to either server correctly
-6. CloudWatch: Define application metrics to be monitored
+1. **AWS**: Sign in to Console
+2. **ECS**: Set up cluster of two instances (region: us-west-2, type: t2.micro)
+3. **Node.js**: Run Node http server on instances (customer port 3000, server1.js & server2.js)
+4. **ELB**: Create Application Load Balancer and Target Group (listens on HTTP port 80)
+5. **Verifiy**: Visit Load Balancer's DNS Name and see if it routes to either server alternatively
+6. **CloudWatch**: Define application metrics to be monitored (RequestCountPerTarget vs. RequestCount)
+
+## Demo
+
+Visit load balancer DNS @ [http://ecs-load-balancer-1166260154.us-west-2.elb.amazonaws.com/](http://ecs-load-balancer-1166260154.us-west-2.elb.amazonaws.com/)
 
 ## Screenshots
 
@@ -42,5 +46,7 @@ Web server 2 IP:    33333 requests processed
 ### step 6
 
 ![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/blob/master/screenshots/aws-cloud-watch.PNG "step6")
+
+## Important Notes
 
 ## High-Level Diagrams
