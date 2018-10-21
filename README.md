@@ -11,7 +11,8 @@ Web server 2 IP:    33333 requests processed
 
 ## TODO's
 
-I haven't been able to find the right CloudWatch metrics to query the count of requests processed by each server. I only found the average and sum of requests.
+I haven't been able to find the right CloudWatch metrics to query the count of requests processed by each server. I only found the average and sum of requests. If I later find the right metric to use, I can try make an API request to the CloudWatch endpoints as refenced in following documentation:
+[https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/making-api-requests.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/making-api-requests.html)
 
 ## Steps I did
 
@@ -49,7 +50,7 @@ Visit load balancer DNS @ [http://ecs-load-balancer-1166260154.us-west-2.elb.ama
 
 ### step 6
 
-![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/blob/master/screenshots/aws-cloud-watch.PNG "step6")
+![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/blob/master/screenshots/aws-cloud-watch-new.PNG "step6")
 
 ## References
 
@@ -62,13 +63,16 @@ Visit load balancer DNS @ [http://ecs-load-balancer-1166260154.us-west-2.elb.ama
 * Creating an Application Load Balancer
 [https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-application-load-balancer.html](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-application-load-balancer.html)
 
+* What is Amazon CloudWatch?
+[https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html)
+
 
 ## High-Level Diagrams
 
 * EC2 Container Service
 [https://github.com/awslabs/amazon-ecs-nodejs-microservices/tree/master/2-containerized](https://github.com/awslabs/amazon-ecs-nodejs-microservices/tree/master/2-containerized)
 
-* AWS APPLICATION LOAD BALANCER (ALB) 
+* AWS Application Load Balancer (ALB) 
 [https://www.bogotobogo.com/DevOps/AWS/aws-ELB-ALB-Application-Load-Balancer-ECS.php](https://www.bogotobogo.com/DevOps/AWS/aws-ELB-ALB-Application-Load-Balancer-ECS.php)
 
 * What is Amazon Elastic Container Service?
