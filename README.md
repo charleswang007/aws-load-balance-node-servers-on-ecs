@@ -11,7 +11,7 @@ Web server 2 IP:    33333 requests processed
 
 ## TODO's
 
-I haven't been able to find the right CloudWatch metrics to query the count of requests processed by each server. I only found the average and sum of requests. If I later find the right metric to use, I can try make an API request to the CloudWatch endpoints as refenced in following documentation:
+I haven't been able to find the right CloudWatch metrics to query the count of requests processed by **_each_** server. I only found the *average* and *sum* of requests. If I later find the right metric to use, I can try make an API request to the CloudWatch endpoints as refenced in the following documentation:
 [https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/making-api-requests.html](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/making-api-requests.html)
 
 ## Steps I did
