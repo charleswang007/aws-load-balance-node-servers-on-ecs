@@ -27,6 +27,10 @@ I haven't been able to find the right CloudWatch metrics to query the count of r
 
 Visit load balancer DNS @ [http://ecs-load-balancer-1166260154.us-west-2.elb.amazonaws.com/](http://ecs-load-balancer-1166260154.us-west-2.elb.amazonaws.com/)
 
+## Add-Ons
+
+I use a tool call **_forever_** which is a simple CLI tool for ensuring that a given script runs continuously. Thus I can run the two Node.js server continuously by triggering command *forever start server.js* and the demo would still work even when I close the Putty sessions.
+
 ## Screenshots
 
 ### step 2
