@@ -22,25 +22,25 @@ Web server 2 IP:    33333 requests processed
 
 ### step 2
 
-![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/screenshots/ecs-cluster-2-instances.png "step2")
+![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/screenshots/ecs-cluster-2-instances.PNG "step2")
 
 ### step 3
 
-![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/screenshots/node-server1.png "step3.1")
-![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/screenshots/node-server2.png "step3.2")
+![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/screenshots/node-server1.PNG "step3.1")
+![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/screenshots/node-server2.PNG "step3.2")
 
 ### step 4
 
-![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/screenshots/ecs-load-balancer.png "step4.1")
-![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/screenshots/ecs-target-group-2-targets.png "step4.2")
+![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/screenshots/ecs-load-balancer.PNG "step4.1")
+![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/screenshots/ecs-target-group-2-targets.PNG "step4.2")
 
 ### step 5
 
-![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/screenshots/alb-to-server1.png "step5.1")
-![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/screenshots/alb-to-server2.png "step5.2")
+![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/screenshots/alb-to-server1.PNG "step5.1")
+![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/screenshots/alb-to-server2.PNG "step5.2")
 
 ### step 6
 
-![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/screenshots/aws-cloud-watch.png "step6")
+![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/screenshots/aws-cloud-watch.PNG "step6")
 
 ## High-Level Diagrams
