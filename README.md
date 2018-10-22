@@ -33,7 +33,7 @@ I use a tool called **_forever_** which is a simple CLI for ensuring that a give
 
 ## Add-On 2
 
-I implemnted a visitor counter in both Node.js server. The value of counter will increment by 1 whenever a user visits the server running on port 3000. Thus when browsing the Load Balancer (ELB) DNS address, we see the number of HTTP requests made to either server1 or server2.
+I implemnted a **_visitor counter_** in both Node.js server. The value of counter will **_increment by 1_** whenever a user visits the server running on port 3000. Thus when browsing the Load Balancer (ELB) DNS address, we see the number of **_HTTP requests_** made to either server1 or server2.
 
 ## Screenshots
 
