@@ -20,16 +20,20 @@ I haven't been able to find the right CloudWatch metrics to query the count of r
 2. **ECS**: Set up cluster of two constainer instances (region: *us-west-2*, type: *t2.micro*)
 3. **Node.js**: Run Node http server on instances (customer port *3000*, *server1.js* & *server2.js*)
 4. **ELB**: Create Application Load Balancer and Target Group (listens on *HTTP* port *80*)
-5. **Verifiy**: Visit Load Balancer's DNS address and see if it routes to either server alternatively
+5. **Verifiy**: Visit Load Balancer's DNS address and see if it routes to either server alternatively (note that visit count *increments*)
 6. **CloudWatch**: Define application metrics to be monitored (*RequestCountPerTarget* vs. *RequestCount*)
 
 ## Demo
 
 Visit load balancer DNS @ [http://ecs-load-balancer-1166260154.us-west-2.elb.amazonaws.com/](http://ecs-load-balancer-1166260154.us-west-2.elb.amazonaws.com/)
 
-## Add-Ons
+## Add-On 1
 
 I use a tool called **_forever_** which is a simple CLI for ensuring that a given script runs continuously. Thus I can run the two Node.js server continuously by triggering command ```forever start server.js``` and the demo would still work even when I close the Putty sessions.
+
+## Add-On 2
+
+I implemnted a visitor counter in both Node.js server. The value of counter will increment by 1 whenever a user visits the server running on port 3000. Thus when browsing the Load Balancer (ELB) DNS address, we see the number of HTTP requests made to either server1 or server2.
 
 ## Screenshots
 
@@ -51,8 +55,8 @@ I use a tool called **_forever_** which is a simple CLI for ensuring that a give
 
 ### step 5
 
-![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/blob/master/screenshots/alb-to-server1.PNG "step5.1")
-![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/blob/master/screenshots/alb-to-server2.PNG "step5.2")
+![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/blob/master/screenshots/alb-to-server1-count.PNG "step5.1")
+![alt text](https://github.com/charleswang007/aws-load-balance-node-servers-on-ecs/blob/master/screenshots/alb-to-server2-count.PNG "step5.2")
 
 ### step 6
 
